@@ -32,7 +32,7 @@
 .main_chat_chats{
   height: calc( 100vh - 190px);
   background-color: #FAFAFA;
-  padding-top: 46px;
+  padding-top: 46px 40px 0;
 }
 
 .main_chat_form{
