@@ -10,20 +10,7 @@
 </div>
 
 <div class="main_chat_chats">
-  <div class="chat">
-    <div class="chat-info">
-      <div class="chat-user-name">Kaho</div>
-      <div class="chat-date">2020/3/31(Wed) 12:43:30</div>
-    </div>
-    <div class="chat-text">おはよう</div>
-  </div>
-  <div class="chat">
-    <div class="chat-info">
-      <div class="chat-user-name">Kaho</div>
-      <div class="chat-date">2020/3/31(Wed) 12:43:30</div>
-    </div>
-    <div class="chat-text">こんにちは</div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], html: {class: "main_chat_form"}, local: true do |f| %>
